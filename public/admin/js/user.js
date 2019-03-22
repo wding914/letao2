@@ -42,12 +42,12 @@ $(function () {
     //3.点击确定按钮,发送ajax请求,请求成功,关闭模态框,重新渲染页面
     //注册事件委托
     $("tbody").on('click', ".btn", function () {
-        $('.firstModal').modal("show");
+        $('.userModal').modal("show");
         id = $(this).data('id');
         isDelete = $(this).hasClass("btn-danger") ? 0 : 1;
     })
    //3.
-    $('.btn-first-confirm').on("click", function () {
+    $('.btn-user-confirm').on("click", function () {
         $.ajax({
             url: '/user/updateUser',
             type: 'post',
@@ -57,7 +57,7 @@ $(function () {
             },
             success: function (info) {
                 // console.log(info);
-                $(".firstModal").modal("hide");
+                $(".userModal").modal("hide");
                 render();
 
             }
