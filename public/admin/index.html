@@ -48,11 +48,9 @@
                 <li><a href="#">管理系统</a></li>
                 <li class="active">首页</li>
             </ol>
-             <!-- index页面特有内容 -->
-
-
-             <div id="echarts-bar" class="pull-left" style="width: 500px;height:400px;"></div>
-             <div id="echarts-pic"  class="pull-right" style="width: 500px;height:400px;"></div>
+            <!-- index页面特有内容 -->
+            <div id="echarts-bar" class="pull-left" style="width: 500px;height:400px;"></div>
+            <div id="echarts-pic" class="pull-right" style="width: 500px;height:400px;"></div>
 
 
 
@@ -61,6 +59,30 @@
 
 
     </div>
+
+
+
+
+    <!-- 退出模态框 -->
+    <div class="modal fade myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">温馨提示</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-danger"><span class="glyphicon glyphicon-info-sign"></span>您确定要退出后台管理系统吗?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-primary btnLogout">退出</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
 
 
 

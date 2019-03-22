@@ -1,7 +1,7 @@
 //动态效果
 //1.点击分类管理,显示或隐藏二级菜单
 //2.点击topbar的menu,显示或隐藏侧边栏
-//3.点击topbar的logout(退出按钮),发送ajax,进行页面跳转
+//3.点击topbar的logout(退出按钮),弹出模态框,发送ajax,进行页面跳转
 
 //1.
 $(".second").prev().on("click", function () {
@@ -18,6 +18,11 @@ $(".menu").on("click", function () {
 
 //3.
 $(".logout").on("click", function () {
+    $(".myModal").modal("show");
+
+
+})
+$(".btnLogout").on("click", function () {
     $.ajax({
         url: '/employee/employeeLogout',
         type: "get",

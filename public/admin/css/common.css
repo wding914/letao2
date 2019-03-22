@@ -129,3 +129,11 @@ margin: 0 auto;
 .main .content .breadcrumb a{
     color: #337ab7;
 }
+
+/* -------------user.html的样式------------- */
+table th{
+    text-align: center;
+}
+.table>tbody>tr>td{
+    vertical-align: middle;
+}

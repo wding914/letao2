@@ -1,0 +1,8 @@
+index.html:
+//点击按钮,显示或隐藏div(默认隐藏)   slideToggle()
+
+//点击按钮,切换类    toggleClass
+
+user.html:
+//给表格每列设置宽度  width="10%"
+//表格中的序号,不适合用id(删除记录,id就不连续了)   建议用模板的i
