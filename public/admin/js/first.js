@@ -15,18 +15,7 @@ $(function () {
                 // console.log(info);
                 $('tbody').html(template("first-tmp", info));
                 //2.引入分页插件
-                $("#paginator").bootstrapPaginator({
-                    bootstrapMajorVersion: 3,
-                    currentPage: info.page,
-                    totalPages: Math.ceil(info.total / info.size),
-                    onPageClicked: function (event, originalEvent, type, page) {
-                        // console.log(page);
-                        //点击页码,渲染对应页
-                        render(page);
-
-                    }
-                })
-
+                 paginator(info,render);
             }
         })
 

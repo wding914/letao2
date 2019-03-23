@@ -6,3 +6,9 @@ index.html:
 user.html:
 //给表格每列设置宽度  width="10%"
 //表格中的序号,不适合用id(删除记录,id就不连续了)   建议用模板的i
+
+
+//second.html
+//上传图片,想用按钮(不想用上传文件表单项)
+//表单项:隐藏  style="display:none"
+//给表单项绑定一个label标签(点击label,相当于点击上传文件表单项)  label(class="btn")
